@@ -130,7 +130,7 @@ namespace TiledGlyph
 
             GlobalSettings.iTileWidth = Convert.ToInt32(textboxTileWidth.Text.Trim());
             GlobalSettings.iTileHeight = Convert.ToInt32(textboxTileHeight.Text.Trim());
-            GlobalSettings.iFontHeight = (int)(Convert.ToInt32(textboxFontHeight.Text.Trim()) * 0.75);
+            GlobalSettings.iFontHeight = (int)(Convert.ToInt32(textboxFontHeight.Text.Trim()) * 1);
             GlobalSettings.iGRenderMode = comboboxRenderMode.SelectedIndex;
             GlobalSettings.iImageWidth = Convert.ToInt32(textboxImageWidth.Text.Trim());
             GlobalSettings.iImageHeight = Convert.ToInt32(textboxImageHeight.Text.Trim());
@@ -320,7 +320,7 @@ namespace TiledGlyph
                 textboxFontHeight.Text = "16";
                 return;
             }
-            GlobalSettings.iFontHeight = (int)(fontHeight * 0.75);
+            GlobalSettings.iFontHeight = (int)(fontHeight * 1);
         }
 
 
